@@ -1,4 +1,4 @@
-electric sheep
-==============
+globes
+======
 
-a crossplatform (ios, macos & win) opengles2.0 renderer in c++
+Globes based game - January entry for 1GAM jam
