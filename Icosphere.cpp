@@ -1,18 +1,17 @@
 //
-//  CubeModel.cpp
-//  electricSheep
+//  Icosphere.cpp
+//  mac
 //
-//  Created by Ali Helmy on 30/10/2012.
-//  Copyright (c) 2012 wackyCube. All rights reserved.
+//  Created by Ali Helmy on 06/01/2013.
+//  Copyright (c) 2013 wackyCube. All rights reserved.
 //
 
-#include "CubeModel.h"
-#include "Path_C_Interface.h"
+#include "Icosphere.h"
 #include <vector>
 
 using namespace std;
 
-CubeModel::CubeModel() : Model() {
+Icosphere::Icosphere() : Model() {
     vector<GLushort> faces;
     vector<modelData> modelDataMap;
     
@@ -111,6 +110,6 @@ CubeModel::CubeModel() : Model() {
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
-CubeModel::~CubeModel() {
+Icosphere::~Icosphere() {
     
 }

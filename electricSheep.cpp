@@ -1,6 +1,6 @@
 #include "electricSheep.h"
 #include "Path_C_Interface.h"
-#include "Voxel.h"
+#include "Globe.h"
 
 //windowSize
 int windowWidth=1136;
@@ -114,7 +114,7 @@ bool ElectricSheepEngine::initShaders(const char *vertexShaderPath, const char *
 
 void ElectricSheepEngine::initWorld() {
     for (int s=0; s<numberOfSheep; s++) {
-        herd.push_back(new Voxel());
+        herd.push_back(new Globe());
     }
 }
 

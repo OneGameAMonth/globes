@@ -15,9 +15,7 @@
 		5755E44D1687426B00AFA4B3 /* FileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5755E4461687426B00AFA4B3 /* FileUtils.cpp */; };
 		5755E491168775E600AFA4B3 /* fragment.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5755E48F168775DA00AFA4B3 /* fragment.glsl */; };
 		5755E492168775E600AFA4B3 /* vertex.glsl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5755E490168775DA00AFA4B3 /* vertex.glsl */; };
-		5755E4991687762E00AFA4B3 /* Voxel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5755E4961687762E00AFA4B3 /* Voxel.cpp */; };
 		5755E49A1687762E00AFA4B3 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5755E4971687762E00AFA4B3 /* GameObject.cpp */; };
-		5755E49F1687763800AFA4B3 /* CubeModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5755E49B1687763800AFA4B3 /* CubeModel.cpp */; };
 		5755E4A01687763800AFA4B3 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5755E49E1687763800AFA4B3 /* Model.cpp */; };
 		5755E4A21687765200AFA4B3 /* pc-PathUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5755E4A11687765200AFA4B3 /* pc-PathUtils.cpp */; };
 		5755E4B91688872100AFA4B3 /* desktopLauncher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5755E4B81688872100AFA4B3 /* desktopLauncher.cpp */; };
@@ -25,6 +23,8 @@
 		577F20B21695CC8D0086125B /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 577F20B11695CC8D0086125B /* libGLEW.a */; };
 		577F20B81695CCB90086125B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577F20B71695CCB90086125B /* Cocoa.framework */; };
 		577F20BA1695CCC90086125B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577F20B91695CCC90086125B /* IOKit.framework */; };
+		577F20C91699D92D0086125B /* Icosphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 577F20C71699D92D0086125B /* Icosphere.cpp */; };
+		577F20CD1699D9B60086125B /* Globe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 577F20CB1699D9B60086125B /* Globe.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,12 +58,8 @@
 		5755E4481687426B00AFA4B3 /* Path_C_Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Path_C_Interface.h; path = ../../Path_C_Interface.h; sourceTree = "<group>"; };
 		5755E48F168775DA00AFA4B3 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fragment.glsl; path = ../../resources/shaders/fragment.glsl; sourceTree = "<group>"; };
 		5755E490168775DA00AFA4B3 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vertex.glsl; path = ../../resources/shaders/vertex.glsl; sourceTree = "<group>"; };
-		5755E4951687762E00AFA4B3 /* Voxel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Voxel.h; path = ../../Voxel.h; sourceTree = "<group>"; };
-		5755E4961687762E00AFA4B3 /* Voxel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Voxel.cpp; path = ../../Voxel.cpp; sourceTree = "<group>"; };
 		5755E4971687762E00AFA4B3 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObject.cpp; path = ../../GameObject.cpp; sourceTree = "<group>"; };
 		5755E4981687762E00AFA4B3 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = ../../GameObject.h; sourceTree = "<group>"; };
-		5755E49B1687763800AFA4B3 /* CubeModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CubeModel.cpp; path = ../../CubeModel.cpp; sourceTree = "<group>"; };
-		5755E49C1687763800AFA4B3 /* CubeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeModel.h; path = ../../CubeModel.h; sourceTree = "<group>"; };
 		5755E49D1687763800AFA4B3 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../../Model.h; sourceTree = "<group>"; };
 		5755E49E1687763800AFA4B3 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Model.cpp; path = ../../Model.cpp; sourceTree = "<group>"; };
 		5755E4A11687765200AFA4B3 /* pc-PathUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "pc-PathUtils.cpp"; path = "../../../pc-PathUtils.cpp"; sourceTree = "<group>"; };
@@ -74,6 +70,10 @@
 		577F20B11695CC8D0086125B /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = "../thirdparty/glew-1.9.0/libGLEW.a"; sourceTree = "<group>"; };
 		577F20B71695CCB90086125B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		577F20B91695CCC90086125B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		577F20C71699D92D0086125B /* Icosphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Icosphere.cpp; path = ../../Icosphere.cpp; sourceTree = "<group>"; };
+		577F20C81699D92D0086125B /* Icosphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Icosphere.h; path = ../../Icosphere.h; sourceTree = "<group>"; };
+		577F20CB1699D9B60086125B /* Globe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Globe.cpp; path = ../../Globe.cpp; sourceTree = "<group>"; };
+		577F20CC1699D9B60086125B /* Globe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Globe.h; path = ../../Globe.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,10 +173,10 @@
 		5755E4931687761A00AFA4B3 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				5755E49B1687763800AFA4B3 /* CubeModel.cpp */,
-				5755E49C1687763800AFA4B3 /* CubeModel.h */,
 				5755E49D1687763800AFA4B3 /* Model.h */,
 				5755E49E1687763800AFA4B3 /* Model.cpp */,
+				577F20C71699D92D0086125B /* Icosphere.cpp */,
+				577F20C81699D92D0086125B /* Icosphere.h */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -184,10 +184,10 @@
 		5755E4941687761E00AFA4B3 /* gameObjects */ = {
 			isa = PBXGroup;
 			children = (
-				5755E4951687762E00AFA4B3 /* Voxel.h */,
-				5755E4961687762E00AFA4B3 /* Voxel.cpp */,
 				5755E4971687762E00AFA4B3 /* GameObject.cpp */,
 				5755E4981687762E00AFA4B3 /* GameObject.h */,
+				577F20CB1699D9B60086125B /* Globe.cpp */,
+				577F20CC1699D9B60086125B /* Globe.h */,
 			);
 			name = gameObjects;
 			sourceTree = "<group>";
@@ -256,12 +256,12 @@
 				5755E44B1687426B00AFA4B3 /* electricSheep.cpp in Sources */,
 				5755E44C1687426B00AFA4B3 /* shaderUtilities.cpp in Sources */,
 				5755E44D1687426B00AFA4B3 /* FileUtils.cpp in Sources */,
-				5755E4991687762E00AFA4B3 /* Voxel.cpp in Sources */,
 				5755E49A1687762E00AFA4B3 /* GameObject.cpp in Sources */,
-				5755E49F1687763800AFA4B3 /* CubeModel.cpp in Sources */,
 				5755E4A01687763800AFA4B3 /* Model.cpp in Sources */,
 				5755E4A21687765200AFA4B3 /* pc-PathUtils.cpp in Sources */,
 				5755E4B91688872100AFA4B3 /* desktopLauncher.cpp in Sources */,
+				577F20C91699D92D0086125B /* Icosphere.cpp in Sources */,
+				577F20CD1699D9B60086125B /* Globe.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
